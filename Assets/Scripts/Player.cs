@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Player : Fighter
 {
-
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -20,6 +18,8 @@ public class Player : Fighter
     public override void Act()
     {
         //Fight
+        
+
     }
 
     public override void Flee()
