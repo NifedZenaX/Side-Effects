@@ -16,9 +16,13 @@ public class Enemy : Fighter
     {
         
     }
-    public override void Act()
+    public override void Act(string skillName)
     {
-        //Fight
+        if(GameManager.instance.state == GameState.ENEMY)
+        {
+            //Fight
+            GameManager.instance.state = GameState.PLAYER;
+        }
     }
 
     public override void Flee()

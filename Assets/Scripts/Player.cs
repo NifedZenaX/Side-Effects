@@ -15,10 +15,23 @@ public class Player : Fighter
         
     }
 
-    public override void Act()
+    public override void Act(string skillName)
     {
         //Fight
-        
+        if(skillName == "Attack")
+        {
+            //Attack
+            Debug.Log("Player Attack!");
+        }
+        else if(skillName == "Heal")
+        {
+            //Heal
+            Debug.Log("Player Heal!");
+        }
+        else
+        {
+            Debug.LogWarning("There is no " + skillName  +" in this skill list");
+        }
 
     }
 

@@ -17,6 +17,6 @@ public abstract class Fighter : MonoBehaviour
         healthBar.minValue = 0;
     }
 
-    public abstract void Act();
+    public abstract void Act(string skillName);
     public abstract void Flee();
 }
